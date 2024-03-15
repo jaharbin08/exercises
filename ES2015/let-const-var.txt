@@ -1,0 +1,4 @@
+1) var can be reassign AND redeclared while let can only be reassigned.
+2) var can be reassign AND redeclared while const can do neither.
+3) both are block level and cannot be redeclared, but let may be reassigned while const may not.
+4) JS compiles, lifting functions and variables to the top of the scope in which they are declared.
