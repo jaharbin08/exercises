@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moive Rating App</title>
+  </head>
+  <body>
+    <div>
+      <h1>Rate Movie</h1>
+      <form id="movie-form">
+        <input type="text" id="movie" placeholder="Enter Movie Name" min="2" />
+        <input
+          type="number"
+          id="rating"
+          placeholder="Enter Rating"
+          min="0"
+          max="10"
+        />
+        <button type="submit">Rate</button>
+      </form>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Movie Title</th>
+            <th>Rating</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="movie-table-body"></tbody>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
